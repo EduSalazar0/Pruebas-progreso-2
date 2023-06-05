@@ -20,3 +20,14 @@ float calcularPromedio(float calificaciones[], int numCalificaciones){
     }
     return suma / numCalificaciones;
 }
+
+// Función para encontrar el índice del alumno con el promedio más alto
+int encontrarMejorAlumno(float promedios[]){
+    int mejorAlumno = 0;
+    for(int i = 1; i < 23; i++){
+        if(promedios[i] > promedios[mejorAlumno]){
+            mejorAlumno = i;
+        }
+    }
+    return mejorAlumno;
+}
